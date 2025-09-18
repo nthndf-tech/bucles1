@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EjercicioScannerIf/EjercicioScannerIf.iml" filepath="$PROJECT_DIR$/EjercicioScannerIf/EjercicioScannerIf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicio3/Exercicio3.iml" filepath="$PROJECT_DIR$/Exercicio3/Exercicio3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyecto1/Proyecto1.iml" filepath="$PROJECT_DIR$/Proyecto1/Proyecto1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tarea2/Tarea2.iml" filepath="$PROJECT_DIR$/Tarea2/Tarea2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bucles1/bucles1.iml" filepath="$PROJECT_DIR$/bucles1/bucles1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ola/ola.iml" filepath="$PROJECT_DIR$/ola/ola.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
