@@ -120,27 +120,43 @@ import java.util.Scanner;
 //    }
 //
 //}
-        public class Main {
-            public static void main(String[] args) {
-
-                //9. Validar contraseña (while): Pide una contraseña hasta que el usuario escriba la correcta.
-
-                Scanner sc = new Scanner(System.in);
-
-
-                String contrasenaValida = "1234@";
-                String contrasenaUsuario = "";
-                do {
-
-                }
-
-
-                while (contrasenaUsuario!=contrasenaValida){
-                    System.out.println("Contraseña:");
-                    System.out.println("Contraseña incorrecta");
-                }
-
-            }
-        }
-
-
+//        public class Main {
+//            public static void main(String[] args) {
+//
+//                //9. Validar contraseña (while): Pide una contraseña hasta que el usuario escriba la correcta.
+//
+//                Scanner sc = new Scanner(System.in);
+//
+//                String contrasenaValida = "1234@";
+//                String contrasenaUsuario;
+//
+//                do {
+//                    System.out.print("Contraseña: ");
+//                    contrasenaUsuario = sc.nextLine();
+//                    if (!contrasenaUsuario.equals(contrasenaValida)){
+//                        System.out.println("Contraseña incorrecta");
+//                    }
+//                }
+//                while (!contrasenaUsuario.equals(contrasenaValida));{
+//                }
+//                System.out.println("Contraseña correcta");
+//            }
+//        }
+//        public class Main {
+//    public static void main(String[] args) {
+//
+//    //10. Números impares (for): Ingresa un número N y muestra los impares desde 1 hasta N
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Ingresa un número: ");
+//
+//        int num = sc.nextInt();
+//
+//        for (int i = 1; i<=num; i++) {
+//            if (i%2!=0) {
+//                System.out.println(i);
+//            }
+//        }
+//
+//    }
+//}
