@@ -157,6 +157,84 @@ import java.util.Scanner;
 //                System.out.println(i);
 //            }
 //        }
+//    }
+//}
+                                            //LISTA 2 -BUCLES
+// Ejercicio 1: Calculadora de Interés Compuesto (for)
+//Escenario: Trabajas para un banco y necesitas crear una herramienta que permita a los
+//clientes proyectar sus ahorros. La herramienta debe calcular cómo crecerá una inversión
+//inicial a lo largo de los años gracias al interés compuesto.
+//Tu tarea:
+//1. Solicita al usuario tres datos:
+//o La cantidad inicial de dinero a invertir (ej: 1000€).
+//o La tasa de interés anual en porcentaje (ej: 5%).
+//o El número de años que mantendrá la inversión (ej: 10 años).
+//2. Usa un bucle for que se ejecute una vez por cada año de la inversión.
+//3. En cada iteración, calcula el interés ganado ese año y súmalo al total. La fórmula
+//para el interés de un año es: saldo_actual * (tasa_de_interes / 100).
+//4. Muestra por pantalla un resumen anual, indicando el año y el saldo total al final
+//de ese año.
+//Ejemplo de salida:
+//Año 1: Saldo de 1050.00€
+//Año 2: Saldo de 1102.50€
+//...
+//Año 10: Saldo de 1628.89€
+
+    public class Main {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Dinero a investir: ");
+                double dineroInvestido = sc.nextInt();
+
+            System.out.println("Tiempo de inversion: ");
+                int tiempoInversion = sc.nextInt();
+
+            System.out.println("Tasa de interes: ");
+                double tasaInteres = sc.nextInt();
+
+           double saldoActual = dineroInvestido;
+
+            for(int i = 1; i <= tiempoInversion; i++){
+                double interes = saldoActual * (tasaInteres/100);
+                saldoActual += interes;
+                System.out.println("Año " + i + ": Saldo de " + interes);
+            }
+        }
+    }
+
+    //Ejercicio 2: El Cajero Automático Interminable (while)
+//Escenario: Estás programando el software de un cajero automático. El cajero debe
+//permitir al usuario retirar dinero mientras tenga saldo suficiente. El programa no sabe
+//cuántas veces el usuario querrá retirar dinero, por lo que debe continuar hasta que el
+//usuario decida salir o se quede sin fondos.
+//Tu tarea:
+//1. Pregunta al usuario su saldo inicial (ej: 2000€).
+//2. Crea un bucle while que se ejecute mientras el saldo sea mayor que cero y el
+//usuario no haya decidido salir.
+//3. Dentro del bucle, pregunta al usuario cuánto dinero desea retirar.
+//4. Comprueba si tiene saldo suficiente.
+//o Si puede retirarlo, resta la cantidad al saldo y muestra el nuevo saldo.
+//o Si no puede, muéstrale un mensaje de "Saldo insuficiente".
+//5. Pregúntale si desea realizar otra operación (puedes usar un '1' para sí y un '0'
+//para no). El bucle debe terminar si el usuario introduce un '0'.
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//        System.out.println("Saldo inicial: ");
+//        double saldoInicial = sc.nextInt();
+//        boolean opcion = true;
+//
+//        while (saldoInicial>=0 && opcion==true){
+//            System.out.println("Valor a retirar: ");
+//
+//            if
+//
+//
+//        }
+//
 //
 //    }
 //}
