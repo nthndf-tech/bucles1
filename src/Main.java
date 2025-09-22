@@ -180,28 +180,28 @@ import java.util.Scanner;
 //...
 //Año 10: Saldo de 1628.89€
 
-    public class Main {
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("Dinero a investir: ");
-                double dineroInvestido = sc.nextInt();
-
-            System.out.println("Tiempo de inversion: ");
-                int tiempoInversion = sc.nextInt();
-
-            System.out.println("Tasa de interes: ");
-                double tasaInteres = sc.nextInt();
-
-           double saldoActual = dineroInvestido;
-
-            for(int i = 1; i <= tiempoInversion; i++){
-                double interes = saldoActual * (tasaInteres/100);
-                saldoActual += interes;
-                System.out.println("Año " + i + ": Saldo de " + interes);
-            }
-        }
-    }
+//    public class Main {
+//        public static void main(String[] args) {
+//            Scanner sc = new Scanner(System.in);
+//
+//            System.out.println("Dinero a investir: ");
+//                double dineroInvestido = sc.nextInt();
+//
+//            System.out.println("Tiempo de inversion: ");
+//                int tiempoInversion = sc.nextInt();
+//
+//            System.out.println("Tasa de interes: ");
+//                double tasaInteres = sc.nextInt();
+//
+//           double saldoActual = dineroInvestido;
+//
+//            for(int i = 1; i <= tiempoInversion; i++){
+//                double interes = saldoActual * (tasaInteres/100);
+//                saldoActual += interes;
+//                System.out.println("Año " + i + ": Saldo de " + interes);
+//            }
+//        }
+//    }
 
     //Ejercicio 2: El Cajero Automático Interminable (while)
 //Escenario: Estás programando el software de un cajero automático. El cajero debe
@@ -219,22 +219,30 @@ import java.util.Scanner;
 //5. Pregúntale si desea realizar otra operación (puedes usar un '1' para sí y un '0'
 //para no). El bucle debe terminar si el usuario introduce un '0'.
 
-//public class Main {
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//
-//        System.out.println("Saldo inicial: ");
-//        double saldoInicial = sc.nextInt();
-//        boolean opcion = true;
-//
-//        while (saldoInicial>=0 && opcion==true){
-//            System.out.println("Valor a retirar: ");
-//
-//            if
-//
-//
-//        }
-//
-//
-//    }
-//}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Saldo inicial: ");
+        double saldoInicial = sc.nextDouble();
+        boolean opcionSalir = true;
+
+
+        while (saldoInicial > 0 && !opcionSalir){
+            int valorRetirar = sc.nextInt();
+            System.out.println("Valor a retirar: " + valorRetirar);
+
+
+
+            if (saldoInicial >= valorRetirar) {
+                System.out.println("Saldo final: " + (saldoInicial - valorRetirar));
+            } else {
+                System.out.println("Saldo insuficiente.");
+            }
+                System.out.println("Preme 1 para salir: " + opcionSalir);
+                opcionSalir = sc.nextBoolean();
+
+                System.out.println("Desea hacer otra operación?");
+        }
+    }
+}
